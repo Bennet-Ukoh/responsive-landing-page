@@ -38,6 +38,11 @@ header .cta:hover {
   background-color: #218838;
 }
 
+.skip-link {
+  color: rgb(9, 33, 6);
+  padding: 15px;
+}
+
 /* Features Section */
 section.features {
   padding: 60px 0;
@@ -56,6 +61,12 @@ section.features {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+#features-heading {
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
 }
 .feature img {
   max-width: 80px;
@@ -76,6 +87,10 @@ footer p {
   margin: 5px 0;
   font-size: 0.9rem;
 }
+footer a {
+  color: rgb(51, 221, 113);
+  text-decoration: none;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -84,5 +99,8 @@ footer p {
   }
   header p {
     font-size: 1rem;
+  }
+  #features-heading {
+    font-size: 1.5rem;
   }
 }

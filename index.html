@@ -9,56 +9,80 @@
   <body>
     <!--
       Project Objective:
-      Design and develop a responsive landing page for a fictional product—GreenTech - Sustainable Solutions—using HTML and CSS (no JavaScript). 
+      Design and develop a responsive landing page for a fictional product—GreenTech - Sustainable Solutions—using HTML and CSS (no JavaScript).
       The page should be visually appealing, mobile-friendly, and structured with proper semantic HTML to offer a great user experience.
 
       Use Case:
-      An environmentally conscious user or potential investor visits the landing page to quickly understand the value proposition of GreenTech. 
-      They are greeted by a compelling hero section that introduces the product, explore the features section which highlights eco-friendliness, innovative design, 
+      An environmentally conscious user or potential investor visits the landing page to quickly understand the value proposition of GreenTech.
+      They are greeted by a compelling hero section that introduces the product, explore the features section which highlights eco-friendliness, innovative design,
       and reliable service, and then view the footer for essential contact details. This page serves as a marketing tool that informs and engages the target audience.
     -->
+
+    <!-- Skip to main content for improved accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Hero Section -->
     <header>
       <div class="container">
         <h1>GreenTech</h1>
         <p>Innovative sustainable solutions for a greener future.</p>
-        <a href="#" class="cta">Learn More</a>
+        <a href="#" class="cta" aria-label="Learn more about GreenTech"
+          >Learn More</a
+        >
       </div>
     </header>
 
-    <!-- Features Section -->
-    <section class="features">
-      <div class="container">
-        <div class="feature-container">
-          <article class="feature">
-            <img src="feature1.png" alt="Eco-Friendly Icon" />
-            <h3>Eco-Friendly</h3>
-            <p>
-              Our products reduce environmental impact while delivering
-              exceptional performance.
-            </p>
-          </article>
-          <article class="feature">
-            <img src="feature2.png" alt="Innovative Design Icon" />
-            <h3>Innovative Design</h3>
-            <p>
-              Cutting-edge technology meets sleek design for maximum efficiency.
-            </p>
-          </article>
-          <article class="feature">
-            <img src="feature3.png" alt="Reliable Service Icon" />
-            <h3>Reliable Service</h3>
-            <p>Enjoy 24/7 support and dependable performance at every step.</p>
-          </article>
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Features Section -->
+      <section class="features" aria-labelledby="features-heading">
+        <div class="container">
+          <h2 id="features-heading">Our Key Features</h2>
+          <div class="feature-container">
+            <article class="feature">
+              <img
+                src="feature1.png"
+                alt="Icon depicting eco-friendly energy"
+              />
+              <h3>Eco-Friendly</h3>
+              <p>
+                Our products reduce environmental impact while delivering
+                exceptional performance.
+              </p>
+            </article>
+            <article class="feature">
+              <img
+                src="feature2.png"
+                alt="Icon representing innovative design"
+              />
+              <h3>Innovative Design</h3>
+              <p>
+                Cutting-edge technology meets sleek design for maximum
+                efficiency.
+              </p>
+            </article>
+            <article class="feature">
+              <img src="feature3.png" alt="Icon symbolizing reliable service" />
+              <h3>Reliable Service</h3>
+              <p>
+                Enjoy 24/7 support and dependable performance at every step.
+              </p>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Footer Section -->
     <footer>
       <div class="container">
-        <p>Contact: info@greentech.com | +234 7036960106</p>
+        <address>
+          <p>
+            Contact:
+            <a href="mailto:info@greentech.com">info@greentech.com</a> | +234
+            7036960106
+          </p>
+        </address>
         <p>Follow us on Social Media: Facebook | Twitter | Instagram</p>
         <p>&copy; 2025 GreenTech. All rights reserved.</p>
       </div>
